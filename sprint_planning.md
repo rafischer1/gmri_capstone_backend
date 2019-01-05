@@ -16,6 +16,8 @@
 
 [ ] Initialize DB "capstonedb" w/ seed data
 
+[ ] basic PHP for frontend GET call and data display on DB loading page
+
 ## Done 🦙
 
 [x] Architecture setup for routes/models/handlers
