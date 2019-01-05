@@ -15,3 +15,9 @@
 [ ] Admin page needs: getALl users #, instance info
 
 [ ] Initialize DB "capstonedb" w/ seed data
+
+## Done 🦙
+
+[x] Architecture setup for routes/models/handlers
+
+[x] Knex and pg setup
