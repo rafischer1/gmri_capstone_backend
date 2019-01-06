@@ -10,4 +10,11 @@ router.get('/', function(req, res, next) {
     .catch(err => next(err));
 });
 
+/***
+ * 
+ * HASH the phone number and unhash before
+ * sending back?
+ * 
+ */
+
 module.exports = router;

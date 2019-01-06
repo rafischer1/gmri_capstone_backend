@@ -2,9 +2,13 @@ var express = require('express');
 var router = express.Router();
 const adminModel = require("../models/adminModel.js");
 
-// retrieve password
+/*
+ *  Hash the password or just check versuse
+ *  the database? When does the pass get hashed?
+ */
+
+// retrieve admin user and check pass
 router.get('/', (req, res) => {
-  // res.send(req.user);
     let name = req.body.name;
     let pass = req.body.pass;
 
