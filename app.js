@@ -3,28 +3,11 @@ const express = require('express');
 const path = require('path');
 const logger = require('morgan');
 
-
-
 const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
 const adminRouter = require('./routes/admin');
 
 const app = express();
-
-// use PHP as view engine in Express
-// must specify options hash even if no options provided!
-var phpExpress = require('php-express')({
-
-  // assumes php is in your PATH
-  binPath: 'php'
-});
-// set view engine to php-express
-app.set('views', './views');
-app.engine('php', phpExpress.engine);
-app.set('view engine', 'php');
-
-// routing all .php file to php-express
-app.all(/.+\.php$/, phpExpress.router);
 
 app.use(logger('dev'));
 app.use(express.json());
